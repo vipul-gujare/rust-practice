@@ -1,3 +1,9 @@
+use std::io::stdin;
+
 fn main() {
-    println!("Hello, world!");
+    let mut name: String = String::new();
+    println!("Who is this? ");
+    let _ = stdin().read_line(&mut name);
+
+    println!("Hello {}", name);
 }
